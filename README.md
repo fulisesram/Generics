@@ -1,2 +1,3 @@
 # Generics
-test-generics
+Generics -> test-generics
+Generics2 -> ejercicio usando interfaz generica
