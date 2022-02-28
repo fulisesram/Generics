@@ -2,11 +2,11 @@ package Generic2;
 
 public class OperationsImpl implements Operations {
 
-    @Override
     /* al momento de hacer la implementacion tenemos que indicar el tipo
      * de OBJECTO con el que vamos a trabajar ya que la interface se
      * definio como generic y debemos indicar la wrapper class del tipo T.
      */
+    @Override
     public Integer sum(int val1, int val2) {
         int res = val1 +val2;
         return res;
@@ -23,4 +23,10 @@ public class OperationsImpl implements Operations {
         String name = new String(String.valueOf(id) + " " + name1);
         return name;
     }
+
+    @Override
+    public void print(Object input) {
+        System.out.println("output = " + input);
+    }
+
 }
